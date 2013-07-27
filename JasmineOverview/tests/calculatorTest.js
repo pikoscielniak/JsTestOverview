@@ -1,4 +1,4 @@
-/*global describe, beforeEach, it,expect, Calculator*/
+/*global describe, beforeEach, it,expect, Calculator, xit, xdescribe*/
 describe('Calculator', function () {
     "use strict";
 
@@ -31,6 +31,10 @@ describe('Calculator', function () {
     });
 
     it('should be able to divide a rational number', function () {
-        expect(calc.divide(1, 3)).toBeBetween(0.33333,0.333334);
+        expect(calc.divide(1, 3)).toBeBetween(0.33333, 0.333334);
+    });
+
+    xit('failing test', function () {
+        expect(false).toBeTruthy();
     });
 });
