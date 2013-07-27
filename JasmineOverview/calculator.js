@@ -1,11 +1,13 @@
 function Calculator() {
+}
+
+Calculator.prototype.add = function (a, b) {
+    "use strict";
+    return a + b;
+};
+
+Calculator.prototype.divide = function (a, b) {
     "use strict";
 
-    this.add = function (a, b) {
-        return a + b;
-    };
-
-    this.divide = function (a, b) {
-        return a / b;
-    };
-}
+    return a / b;
+};
