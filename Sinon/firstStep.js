@@ -23,7 +23,7 @@
 //            expect(returnValue).toBe(10);
 //        });
         it('should spy on a method of an object - better', function () {
-            sinon.reset();
+//            sinon.reset();
             var spy = sinon.spy(myDep, 'someMethod');
             var returnValue = mySUT.callDependencyBetter(myDep);
             expect(spy.called).toBe(true);
